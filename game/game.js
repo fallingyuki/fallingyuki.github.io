@@ -35,6 +35,10 @@ function draw() {
    levelThree(); 
    cursor('https://fallingyuki.github.io/game/game_images/spike_cursor.png');
   }
+  if (gameState=="L4"){
+    levelFour();
+    cursor('WAIT');
+  }
 } // end draw
 
 
@@ -80,8 +84,12 @@ function levelThree(){
   }
   if(score>75){
 // level 4
-//   gameState = "L4";
+   gameState = "L4";
   }
   line(ballx, bally, mouseX, mouseY);
   image(img3, ballx-(ballSize/2), bally-(ballSize/2), 60, 60);
 } // end level three
+
+function levelFour(){
+  text("THE END", width/2, height/2); 
+}
