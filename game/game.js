@@ -76,7 +76,6 @@ function levelThree(){
   if (distToBall <ballSize/2){
     ballx = random(width);
     bally= random(height);
-    ballSize=ballSize -1;
     score= score +1;
   }
   if(score>75){
